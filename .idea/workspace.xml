@@ -4,16 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="edc15cc9-a3aa-4998-95da-e2d0b3fc668f" name="Changes" comment="add crud and schemas and views">
-      <change afterPath="$PROJECT_DIR$/.idea/Project-microschop3.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/poetry.lock" beforeDir="false" afterPath="$PROJECT_DIR$/poetry.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pyproject.toml" beforeDir="false" afterPath="$PROJECT_DIR$/pyproject.toml" afterDir="false" />
+    <list default="true" id="edc15cc9-a3aa-4998-95da-e2d0b3fc668f" name="Changes" comment="migration for order_product_associations table">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/models/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/models/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/models/order.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/models/order.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/models/order_product_association.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/models/order_product_association.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/models/product.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/models/product.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crud.py" beforeDir="false" afterPath="$PROJECT_DIR$/crud.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,16 +44,39 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.main.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "settings.editor.selected.configurable": "promo.database"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.crud.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
-  <component name="RunManager">
+}</component>
+  <component name="RunManager" selected="Python.crud">
+    <configuration name="crud" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Project-microschop3" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/crud.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="Project-microschop3" />
       <option name="ENV_FILES" value="" />
@@ -78,6 +99,11 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.crud" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -135,7 +161,167 @@
       <option name="project" value="LOCAL" />
       <updated>1780568825124</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="add black formatter and apply">
+      <option name="closed" value="true" />
+      <created>1780570151638</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1780570151638</updated>
+    </task>
+    <task id="LOCAL-00007" summary="install SQLAlchemy">
+      <option name="closed" value="true" />
+      <created>1780570381798</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1780570381798</updated>
+    </task>
+    <task id="LOCAL-00008" summary="install sqlite">
+      <option name="closed" value="true" />
+      <created>1780570509220</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1780570509220</updated>
+    </task>
+    <task id="LOCAL-00009" summary="feat: add product models, schemas and basic api endpoints">
+      <option name="closed" value="true" />
+      <created>1780582278944</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1780582278944</updated>
+    </task>
+    <task id="LOCAL-00010" summary="install alembic">
+      <option name="closed" value="true" />
+      <created>1780583666651</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1780583666651</updated>
+    </task>
+    <task id="LOCAL-00011" summary="create migration for products table">
+      <option name="closed" value="true" />
+      <created>1780583719372</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1780583719372</updated>
+    </task>
+    <task id="LOCAL-00012" summary="no more create all on app start">
+      <option name="closed" value="true" />
+      <created>1780583796652</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1780583796652</updated>
+    </task>
+    <task id="LOCAL-00013" summary="create user model">
+      <option name="closed" value="true" />
+      <created>1780584203629</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1780584203629</updated>
+    </task>
+    <task id="LOCAL-00014" summary="migration for users table">
+      <option name="closed" value="true" />
+      <created>1780584230623</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1780584230623</updated>
+    </task>
+    <task id="LOCAL-00015" summary="create posts model">
+      <option name="closed" value="true" />
+      <created>1780585536324</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1780585536324</updated>
+    </task>
+    <task id="LOCAL-00016" summary="migration for posts table">
+      <option name="closed" value="true" />
+      <created>1780585563332</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1780585563332</updated>
+    </task>
+    <task id="LOCAL-00017" summary="create relationships between user and post">
+      <option name="closed" value="true" />
+      <created>1780586605088</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1780586605088</updated>
+    </task>
+    <task id="LOCAL-00018" summary="create user relation mixin">
+      <option name="closed" value="true" />
+      <created>1780587855313</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1780587855313</updated>
+    </task>
+    <task id="LOCAL-00019" summary="create profile for user">
+      <option name="closed" value="true" />
+      <created>1780587885859</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1780587885859</updated>
+    </task>
+    <task id="LOCAL-00020" summary="migration for profile table">
+      <option name="closed" value="true" />
+      <created>1780587911955</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1780587911955</updated>
+    </task>
+    <task id="LOCAL-00021" summary="implement models with relationships (O2O, O2M)">
+      <option name="closed" value="true" />
+      <created>1780596256668</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1780596256668</updated>
+    </task>
+    <task id="LOCAL-00022" summary="create order model">
+      <option name="closed" value="true" />
+      <created>1780597266220</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1780597266220</updated>
+    </task>
+    <task id="LOCAL-00023" summary="migration for order table">
+      <option name="closed" value="true" />
+      <created>1780597284675</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1780597284675</updated>
+    </task>
+    <task id="LOCAL-00024" summary="create order_product_association model">
+      <option name="closed" value="true" />
+      <created>1780598416024</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1780598416024</updated>
+    </task>
+    <task id="LOCAL-00025" summary="migration for order_product_associations table">
+      <option name="closed" value="true" />
+      <created>1780598452599</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1780598452600</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -155,6 +341,37 @@
     <MESSAGE value="use poetry  for version control" />
     <MESSAGE value="refactor: move items_views out of main directory" />
     <MESSAGE value="add crud and schemas and views" />
-    <option name="LAST_COMMIT_MESSAGE" value="add crud and schemas and views" />
+    <MESSAGE value="add black formatter and apply" />
+    <MESSAGE value="install SQLAlchemy" />
+    <MESSAGE value="install sqlite" />
+    <MESSAGE value="feat: add product models, schemas and basic api endpoints" />
+    <MESSAGE value="install alembic" />
+    <MESSAGE value="create migration for products table" />
+    <MESSAGE value="no more create all on app start" />
+    <MESSAGE value="create user model" />
+    <MESSAGE value="migration for users table" />
+    <MESSAGE value="create posts model" />
+    <MESSAGE value="migration for posts table" />
+    <MESSAGE value="create relationships between user and post" />
+    <MESSAGE value="create user relation mixin" />
+    <MESSAGE value="create profile for user" />
+    <MESSAGE value="migration for profile table" />
+    <MESSAGE value="implement models with relationships (O2O, O2M)" />
+    <MESSAGE value="create order model" />
+    <MESSAGE value="migration for order table" />
+    <MESSAGE value="create order_product_association model" />
+    <MESSAGE value="migration for order_product_associations table" />
+    <option name="LAST_COMMIT_MESSAGE" value="migration for order_product_associations table" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/core/models/product.py</url>
+          <line>3</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
