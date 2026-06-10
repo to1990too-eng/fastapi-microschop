@@ -306,12 +306,7 @@ async def demo_get_orders_with_products_with_assoc(session: AsyncSession):
             )
 
 
-async def main_relations(session: AsyncSession):
-    pass
-
-
-async def demo_m2m(session: AsyncSession):
-    # await demo_get_orders_with_products_with_assoc(session)
+async def create_gift_product_for_existing_orders(session: AsyncSession):
     orders = await get_orders_with_products_assoc(session)
     gift_product = await create_product(
         session,
@@ -329,6 +324,15 @@ async def demo_m2m(session: AsyncSession):
         )
 
     await session.commit()
+
+
+async def main_relations(session: AsyncSession):
+    pass
+
+
+async def demo_m2m(session: AsyncSession):
+    await demo_get_orders_with_products_with_assoc(session)
+    # await create_gift_product_for_existing_orders(session)
 
 
 async def main():
