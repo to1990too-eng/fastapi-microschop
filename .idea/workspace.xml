@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="edc15cc9-a3aa-4998-95da-e2d0b3fc668f" name="Changes" comment="migration for order_product_associations table">
+    <list default="true" id="edc15cc9-a3aa-4998-95da-e2d0b3fc668f" name="Changes" comment="migration for order_product_associations table add count">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/models/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/models/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/models/order.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/models/order.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/models/order_product_association.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/models/order_product_association.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/models/product.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/models/product.py" afterDir="false" />
@@ -321,7 +319,15 @@
       <option name="project" value="LOCAL" />
       <updated>1780598452600</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="migration for order_product_associations table add count">
+      <option name="closed" value="true" />
+      <created>1780946590304</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1780946590304</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -336,7 +342,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add .gitignore" />
     <MESSAGE value="initial api" />
     <MESSAGE value="use poetry  for version control" />
     <MESSAGE value="refactor: move items_views out of main directory" />
@@ -361,7 +366,8 @@
     <MESSAGE value="migration for order table" />
     <MESSAGE value="create order_product_association model" />
     <MESSAGE value="migration for order_product_associations table" />
-    <option name="LAST_COMMIT_MESSAGE" value="migration for order_product_associations table" />
+    <MESSAGE value="migration for order_product_associations table add count" />
+    <option name="LAST_COMMIT_MESSAGE" value="migration for order_product_associations table add count" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
